@@ -8,10 +8,10 @@ sudo docker-compose up -d
 
 ## produce messages to a given topic
 /bin/kafka-console-producer --topic my-events --bootstrap-server localhost:9092
-event 1
-event 2
-event 3
-event4
+event 1__
+event 2__
+event 3__
+event4__
 <ctrl+c>
 
 ## consume all messages from the topic
