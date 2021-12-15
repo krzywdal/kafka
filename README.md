@@ -22,3 +22,4 @@ event4
 
 ## number of messages in the topic
 /bin/kafka-run-class kafka.tools.GetOffsetShell --broker-list localhost:9092 --topic my-events
+
