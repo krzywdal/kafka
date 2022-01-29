@@ -3,6 +3,9 @@
 ## start kafka docker image
 sudo docker-compose up -d
 
+## login into the container
+sudo docker exec -it kafka_kafka_1 /bin/bash
+
 ## create kafka topic 
 /bin/kafka-topics --create --topic my-events --bootstrap-server localhost:9092
 
@@ -22,4 +25,3 @@ event4
 
 ## number of messages in the topic
 /bin/kafka-run-class kafka.tools.GetOffsetShell --broker-list localhost:9092 --topic my-events
-
